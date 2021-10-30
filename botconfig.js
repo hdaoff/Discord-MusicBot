@@ -28,10 +28,10 @@ module.exports = {
   //Lavalink
   Lavalink: {
     id: "Main",
-    host: "host name or IP",
+    host: process.env.lava_host || "host",
     port: 80, // The port that lavalink is listening to. This must be a number!
-    pass: "your password",
-    secure: false, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
+    pass: process.env.lava_pass || "pass",
+    secure: true, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
   },
 
   //Please go to https://developer.spotify.com/dashboard/
